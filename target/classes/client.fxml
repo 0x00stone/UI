@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="715.0" prefWidth="1105.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.View.client">
+   <children>
+      <SplitPane dividerPositions="0.7040673211781207" orientation="VERTICAL" prefHeight="715.0" prefWidth="1142.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="1140.0">
+               <children>
+                  <TextArea fx:id="textPrint" prefHeight="497.0" prefWidth="1140.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextArea fx:id="textScan" layoutY="-8.0" prefHeight="218.0" prefWidth="1142.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextArea>
+                  <Button fx:id="post" layoutX="1033.0" layoutY="134.0" mnemonicParsing="false" onAction="#send" prefHeight="47.0" prefWidth="97.0" text="发送" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

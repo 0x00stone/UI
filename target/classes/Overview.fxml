@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="688.0" prefWidth="1076.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.View.Overview">
+   <children>
+      <SplitPane dividerPositions="0.26421404682274247" layoutX="100.0" layoutY="75.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="62.0" text="Instant Messangeing v0.0.2" AnchorPane.leftAnchor="16.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Button fx:id="button1" layoutX="48.0" layoutY="177.0" mnemonicParsing="false" onAction="#heart" text="连接服务器进入频道" />
+                  <Button fx:id="button2" layoutX="66.0" layoutY="325.0" mnemonicParsing="false" onAction="#p2p" text="进入点对点聊天" />
+                  <Button fx:id="button3" layoutX="66.0" layoutY="485.0" mnemonicParsing="false" onAction="#showText" text="查看本地用户表" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TextArea fx:id="textOut" layoutX="13.0" layoutY="14.0" prefHeight="603.0" prefWidth="760.0" />
+                  <TextField fx:id="textIn" layoutX="18.0" layoutY="630.0" prefHeight="42.0" prefWidth="658.0" />
+                  <Button fx:id="button4" layoutX="688.0" layoutY="633.0" mnemonicParsing="false" onAction="#send" prefHeight="36.0" prefWidth="84.0" text="发送" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
